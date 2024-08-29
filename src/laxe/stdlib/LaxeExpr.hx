@@ -558,7 +558,7 @@ abstract LaxeExpr(Expr) from Expr to Expr {
 	public inline function isDisplay(): Bool {
 		return switch(this.expr) {
 			case EDisplay(_, _): true;
-			case EDisplayNew(_): true;
+			//case EDisplayNew(_): true;
 			case _: false;
 		}
 	}

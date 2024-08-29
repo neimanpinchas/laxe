@@ -132,7 +132,7 @@ abstract LaxeTypeDefinition(TypeDefinition) from TypeDefinition to TypeDefinitio
 		}
 	}
 
-	public inline function getWrapper(): { tthis: Null<ComplexType>, from: Array<ComplexType>, to: Array<ComplexType> } {
+	public inline function getWrapper(): { tthis: Null<ComplexType>, from: Null<Array<haxe.macro.Expr.AbstractFlag>>, to: Array<ComplexType> } {
 		return switch(this.kind) {
 			case TDAbstract(tthis, from, to): {
 				tthis: tthis,

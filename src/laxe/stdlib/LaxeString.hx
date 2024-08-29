@@ -68,7 +68,7 @@ abstract LaxeString(String) from String to String {
 	}
 
 	public inline function htmlEscape(?quotes: Bool): String {
-		return StringTools.htmlEscape(this, quotes);
+		return StringTools.htmlEscape(this,quotes != null && quotes);
 	}
 
 	public inline function htmlUnescape(): String {

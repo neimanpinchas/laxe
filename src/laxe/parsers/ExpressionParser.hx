@@ -848,7 +848,7 @@ class ExpressionParser {
 				p.incrementIndex(dot);
 
 				#if (haxe_ver >= 4.3)
-				final accessType = dot == 2 ? EFSafe : EFNormal;
+				final accessType = dot == 2 ? Safe : Normal;
 				#end
 
 				final fieldName = p.parseNextIdentMaybeNumberStartOrElse();
